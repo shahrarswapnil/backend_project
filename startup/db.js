@@ -1,8 +1,9 @@
 const winston = require('winston');
 const mongoose = require('mongoose');
+const config = require('config');
 
 module.exports = function(app){
-    mongoose.connect('mongodb://localhost/vidly-movies')
+    mongoose.connect(config.get('db'))
     .then(() => console.log(
         winston.info('Connected to database!!')
     ));
