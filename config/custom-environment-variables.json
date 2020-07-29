@@ -1,4 +1,3 @@
 {
-    "jwtPrivateKey" : "vidly_jwtPrivateKey",
-    "db" : "nodeproject-db"
+    "jwtPrivateKey" : "vidly_jwtPrivateKey"
 }
